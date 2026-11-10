@@ -480,6 +480,11 @@ function openCertificateLightbox(certKey) {
 
   if (title) title.textContent = data.title;
   if (img) {
+    img.onerror = () => {
+      if (!img.src.includes('nlc_certificate.jpg') && certKey === 'nlc-internship') {
+        img.src = 'assets/certificates/nlc_certificate.jpg';
+      }
+    };
     img.src = data.image;
     img.alt = data.title;
   }
