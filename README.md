@@ -17,6 +17,7 @@ Live reference design inspired by [jayani-portfolio.vercel.app](https://jayani-p
   - **Fullstack Developer Intern Certificate (Grade A)** (Duhzine IT Solutions Pvt Ltd • 2025)
   - **Industrial Internship Training Certificate** (NLC India Limited • 2025)
 - **💻 Featured Projects Showcase**:
+  - **Model Regression Detection System** (Python, LLM Evaluation, GPT-4o-mini, Chart.js, CI/CD Gate) • [Live Demo](https://Kishor-1825.github.io/model-regression-detection-system/)
   - **Online Examination & Assessment System** (Java, Spring Boot, MySQL, JavaScript)
   - **File Integrity Monitoring System (FIM)** (Java, SHA-256 Hashing, File I/O, JDBC, MySQL)
   - **Mini Database Engine from Scratch** (Python, B+ Tree & Hash Indexing, Storage Engine, Web UI)

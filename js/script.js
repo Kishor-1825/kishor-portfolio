@@ -150,6 +150,21 @@ function initProjectFilters() {
    4. Project Details Modal System
    -------------------------------------------------------------------------- */
 const projectDetailsData = {
+  'model-regression': {
+    title: 'Model Regression Detection System',
+    subtitle: 'Python, LLM Evaluation, GPT-4o-mini, Chart.js, CI/CD Gate',
+    description: 'An automated MLOps & LLM regression detection platform engineered to benchmark candidate models (v2 vs v1) against curated golden test suites, compute accuracy/latency deltas, and block quality degradation before deployment.',
+    features: [
+      'Automated candidate vs. baseline diff evaluation comparing test case outcomes across difficulty tiers.',
+      'LLM-as-a-Judge scoring engine measuring per-category accuracy, semantic drift, and judge ratings (1-5 scale).',
+      'Real-time latency profiling and token consumption analytics with automated regression alerts.',
+      'Interactive Chart.js visual analytics tracking category accuracy deltas and historical multi-run pass rate trends.',
+      'Zero-regression deployment gate ensuring baseline passing test cases never flip to failing in production.'
+    ],
+    github: 'https://github.com/Kishor-1825/model-regression-detection-system',
+    demo: 'https://Kishor-1825.github.io/model-regression-detection-system/',
+    category: 'AI / MLOps & Evaluation'
+  },
   'exam-system': {
     title: 'Online Examination & Assessment System',
     subtitle: 'Java, Spring Boot, MySQL, HTML5/CSS3/JavaScript',
@@ -202,6 +217,7 @@ function initProjectModals() {
   const modalDesc = document.getElementById('modalDesc');
   const modalFeaturesList = document.getElementById('modalFeaturesList');
   const modalGithubLink = document.getElementById('modalGithubLink');
+  const modalDemoLink = document.getElementById('modalDemoLink');
   const viewDetailBtns = document.querySelectorAll('[data-project-target]');
 
   if (!modalOverlay) return;
@@ -225,7 +241,16 @@ function initProjectModals() {
       });
 
       if (modalGithubLink) {
-        modalGithubLink.href = data.github;
+        modalGithubLink.href = data.github || 'https://github.com/Kishor-1825';
+      }
+
+      if (modalDemoLink) {
+        if (data.demo) {
+          modalDemoLink.href = data.demo;
+          modalDemoLink.style.display = 'inline-flex';
+        } else {
+          modalDemoLink.style.display = 'none';
+        }
       }
 
       modalOverlay.classList.add('open');

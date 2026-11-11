@@ -532,12 +532,63 @@
         <!-- Project Filter Buttons -->
         <div class="project-filter-bar">
           <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; MLOps</button>
           <button class="filter-btn" data-filter="java">Java &amp; Spring</button>
           <button class="filter-btn" data-filter="fullstack">Full Stack</button>
           <button class="filter-btn" data-filter="systems">Systems &amp; Database</button>
         </div>
 
         <div class="projects-grid">
+
+          <!-- Project: Model Regression Detection System (Flagship) -->
+          <div class="project-card" data-category="ai systems fullstack">
+            <div class="project-card-header">
+              <div class="project-folder-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="project-external-links">
+                <a href="https://github.com/Kishor-1825/model-regression-detection-system" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://Kishor-1825.github.io/model-regression-detection-system/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-card-title">Model Regression Detection System</h3>
+              <p class="project-card-desc">
+                An automated MLOps &amp; LLM regression testing platform that benchmarks candidate models (v2 vs v1) against curated golden datasets, analyzes pass rate deltas, and blocks behavioral regressions before deployment.
+              </p>
+
+              <ul class="project-highlights-list">
+                <li>Automated diff testing evaluating candidate vs baseline models.</li>
+                <li>LLM-as-a-Judge scoring engine with category &amp; latency tracking.</li>
+                <li>Interactive visual dashboard with Chart.js trend breakdowns.</li>
+              </ul>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LLM Evaluation</span>
+                <span class="tech-tag">GPT-4o-mini</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">MLOps</span>
+                <span class="tech-tag">CI/CD Gate</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-secondary btn-sm" data-project-target="model-regression">
+                  <i class="fas fa-info-circle"></i>
+                  <span>View Details</span>
+                </button>
+                <a href="https://Kishor-1825.github.io/model-regression-detection-system/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
 
           <!-- Project 1: Online Examination Platform -->
           <div class="project-card" data-category="java fullstack">
@@ -1179,7 +1230,11 @@
         </ul>
       </div>
 
-      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: flex-end;">
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: flex-end; flex-wrap: wrap;">
+        <a id="modalDemoLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display: none;">
+          <i class="fas fa-external-link-alt"></i>
+          <span>Live Demo</span>
+        </a>
         <a id="modalGithubLink" href="https://github.com/Kishor-1825" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
           <i class="fab fa-github"></i>
           <span>View on GitHub</span>
