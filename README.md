@@ -2,7 +2,7 @@
 
 Modern, sleek, and responsive portfolio website built with HTML5, CSS3, and JavaScript, featuring a dynamic dark/light mode, interactive experience timeline, projects showcase with details modal, and verified certificate previews.
 
-Live reference design inspired by [jayani-portfolio.vercel.app](https://jayani-portfolio.vercel.app/#experience).
+
 
 ---
 
